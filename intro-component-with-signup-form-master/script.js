@@ -41,8 +41,8 @@ function addError(field, msg){
     const selectForm = document.querySelector("."+field).parentNode;
     selectForm.classList.add('error');
 
-    const errorMsg = document.querySelector('.error-msg');
-    errorMsg.innerHTML =  msg;
+    const errorMsg = selectForm.querySelector('.error-msg');
+    errorMsg.innerHTML = msg;
     
 }
 
