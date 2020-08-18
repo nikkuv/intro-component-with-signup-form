@@ -23,7 +23,6 @@ body{
 
 .container{
     display: flex;
-    /*flex-wrap: wrap;*/
     margin: 0 auto;
     max-width: 1440px;
     width: 90%;
@@ -40,12 +39,12 @@ body{
 
 
 .part-1 h1{
-    font-size: 3rem;
+    font-size: calc(3rem * 1vw) ;
     padding:  0 2.5rem;
 }
 
 .part-1 p{
-    font-size: 1.2rem;
+    font-size: calc(1.2rem * 1vw);
     padding: 2.5rem;
 }
 
@@ -130,7 +129,6 @@ button{
     position: absolute;
     bottom: -10;
     right: 0;
-    padding: .5rem;
     opacity: 0;
 }
 
@@ -156,7 +154,7 @@ button{
 
 
 @media(max-width: 780px){
-
+    
     .container{
         flex-direction: column;
     }
@@ -164,5 +162,15 @@ button{
     .part-1 h1,p{
         text-align: center;
     }
+
+    .part-1 h1{
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .part-1 p{
+        padding: 2.5rem 0;
+    }
+
 
 }
